@@ -35,7 +35,6 @@ export default function Navbar() {
             {/* Contact button + 3-line burger */}
             <div className="flex items-center gap-3">
               <button
-                onClick={() => setContactOpen(true)}
                 className="bg-black text-white px-5 py-2 rounded hover:bg-gray-800 transition"
               >
                 დაგვიკავშირდი
