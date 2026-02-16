@@ -67,7 +67,7 @@ export default function Navbar() {
           <div className="flex flex-col mt-20 gap-6 px-6 text-gray-700 font-medium">
             <Link href="/" onClick={() => setMobileOpen(false)} className="py-2 rounded hover:bg-gray-100 w-full text-left">მთავარი</Link>
             <Link href="/products" onClick={() => setMobileOpen(false)} className="py-2 rounded hover:bg-gray-100 w-full text-left">პროდუქცია</Link>
-            <button onClick={() => {setContactOpen(true); setMobileOpen(false)}} className="bg-black text-white py-2 px-4 rounded w-full text-center hover:bg-gray-800">დაგვიკავშირდი</button>
+            <button className="bg-black text-white py-2 px-4 rounded w-full text-center hover:bg-gray-800">დაგვიკავშირდი</button>
 
             <hr className="border-gray-200 my-2" />
 
