@@ -1,26 +1,30 @@
+// app/products/page.jsx
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { products } from "../../data/products";
+import { products } from "@/data/products";
 
-export default function ProductList() {
+export default function ProductsPage() {
   return (
     <section className="p-10 max-w-7xl mx-auto">
-      <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">
+      <h1 className="text-4xl font-bold mb-12 text-center text-gray-800">
         პროდუქცია
-      </h2>
+      </h1>
 
       {products.map((category) => (
         <div key={category.category} className="mb-16">
           {/* კატეგორიის სახელი */}
-          <h3 className="text-3xl font-semibold mb-8 text-gray-700">
+          <h2 className="text-3xl font-semibold mb-8 text-gray-700">
             {category.category}
-          </h3>
+          </h2>
 
           {/* პროდუქტის ბარათები */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {category.items.map((item) => (
-              <div
+              <Link
                 key={item.id}
+                href={`/products/${item.id}`}
                 className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-5 flex flex-col"
               >
                 {/* სურათი */}
@@ -36,9 +40,9 @@ export default function ProductList() {
                 )}
 
                 {/* პროდუქტის ინფორმაცია */}
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
                   {item.name}
-                </h4>
+                </h3>
                 <p className="text-gray-600 text-sm">
                   ზომა: <span className="font-medium">{item.size}</span>
                 </p>
@@ -51,14 +55,10 @@ export default function ProductList() {
                   {item.price} ₾
                 </p>
 
-                {/* დეტალური ლინკი */}
-                <Link
-                  href={`/products/${item.id}`}
-                  className="mt-4 text-blue-600 hover:text-blue-800 font-medium underline"
-                >
-                  ნახე დეტალურად
-                </Link>
-              </div>
+                <span className="mt-auto text-blue-600 hover:text-blue-800 font-medium underline">
+                  დეტალურად
+                </span>
+              </Link>
             ))}
           </div>
         </div>
