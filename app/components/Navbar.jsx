@@ -136,14 +136,13 @@ export default function Navbar() {
 
             <div className="flex flex-col gap-3 text-sm text-gray-600">
               <div className="flex items-center gap-2">
-                <FaMapMarkerAlt className="text-gray-500" /> 2 Leonidze street,
-                Tbilisi, Georgia
+                <FaMapMarkerAlt className="text-gray-500" /> მცხეთა, საქართველო
               </div>
               <div className="flex items-center gap-2">
                 <FaPhoneAlt className="text-gray-500" /> +995 557 17 17 06
               </div>
               <div className="flex items-center gap-3 text-sm sm:text-base">
-                  <FaEnvelope className="text-gray-500" /> info@concrete.ge
+                  <FaEnvelope className="text-gray-500" />info@concrete.ge
               </div>
             </div>
 

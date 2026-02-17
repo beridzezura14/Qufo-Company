@@ -25,7 +25,7 @@ export default function Footer() {
             <FaPhoneAlt className="text-gray-400" /> +995 555 11 22 33
           </div>
           <div className="flex items-center gap-2 text-gray-300">
-            <FaEnvelope className="text-gray-400" /> info@concrete.ge
+            <FaEnvelope className="text-gray-400" />info@concrete.ge
           </div>
         </div>
 
