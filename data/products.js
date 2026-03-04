@@ -7,74 +7,227 @@ export const products = [
         name: "სანიაღვრე არხი",
         size: "40x40x10",
         length: "2 მ",
-        price: 150
+        price: 150,
+        image: ["/default_arxi.png", "/arxi/40x40x10.jpeg"],
       },
       {
         id: "drain-2",
         name: "სანიაღვრე არხი",
         size: "25x25x25",
         length: "2 მ",
-        price: 400
+        price: 400,
+        image: ["/default_arxi.png", "/arxi/25x25x25.png"],
       },
       {
         id: "drain-3",
         name: "სანიაღვრე არხი",
         size: "40x25x10",
         length: "1.5 მ",
-        price: 100
+        price: 100,
+        image: ["/default_arxi.png", "/arxi/40x25x10.png"],
       },
-      {
-        id: "drain-4",
-        name: "ლითონის ცხაურა",
-        size: "-",
-        length: "1 მ",
-        price: 130
-      },
-      {
-        id: "drain-5",
-        name: "ბეტონის თავსახური",
-        size: "-",
-        length: "2 მ",
-        price: 120
-      }
-    ]
+    ],
   },
+
   {
-    category: "რკინა-ბეტონის ჭები (წრიული)",
+    category: "რკინა-ბეტონის ჭები",
     items: [
-      { id: "rb-1", name: "რ/ბ ჭა", size: "1000x1000x100", price: 150 },
-      { id: "rb-2", name: "რ/ბ ჭა", size: "1500x1000x100", price: 210 },
-      { id: "rb-3", name: "რ/ბ ჭა", size: "1000x500x100", price: 90 },
-      { id: "rb-4", name: "რ/ბ ჭა", size: "1000x300x100", price: 70 },
-      { id: "rb-5", name: "რ/ბ ჭა", size: "1000x200x100", price: 50 },
-      { id: "rb-6", name: "რ/ბ ჭა", size: "1500x500x100", price: 140 },
-      { id: "rb-7", name: "რ/ბ ჭა", size: "1500x300x100", price: 90 },
-      { id: "rb-8", name: "რ/ბ ჭა", size: "1500x200x100", price: 70 },
-      { id: "rb-9", name: "რ/ბ ჭის თავსახური", size: "1000x100", price: 100 },
-      { id: "rb-10", name: "რ/ბ ჭის თავსახური", size: "1500x100", price: 150 }
-    ]
+      {
+        id: "rb-1",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1000x1000x100",
+        price: 150,
+        image: ["/default.jpeg", "/circle-cha/1000x1000x100.jpeg"],
+      },
+      {
+        id: "rb-2",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1500x1000x100",
+        price: 210,
+        image: ["/default.jpeg", "/circle-cha/1500x1000x100.jpeg"],
+      },
+      {
+        id: "rb-3",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1000x500x100",
+        price: 90,
+        image: ["/default.jpeg", "/circle-cha/1000x500x100x.jpeg"],
+      },
+      {
+        id: "rb-4",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1000x300x100",
+        price: 70,
+        image: ["/default.jpeg", "/circle-cha/1000x300x100.jpeg"],
+      },
+      {
+        id: "rb-5",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1000x200x100",
+        price: 50,
+        image: ["/default.jpeg", "/circle-cha/1000x200x100-crop.jpeg"],
+      },
+      {
+        id: "rb-6",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1500x500x100",
+        price: 140,
+        image: ["/default.jpeg", "/circle-cha/1500x500x100.jpeg"],
+      },
+      {
+        id: "rb-7",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1500x300x100",
+        price: 90,
+        image: ["/default.jpeg", "/circle-cha/1500x300x100.jpeg"],
+      },
+      {
+        id: "rb-8",
+        name: "რკინა-ბეტონის ჭა",
+        size: "1500x200x100",
+        price: 70,
+        image: ["/default.jpeg", "/circle-cha/1500x200x100.jpeg"],
+      },
+      {
+        id: "rb-9",
+        name: "რკინა-ბეტონის ჭის თავსახური",
+        size: "1200x100",
+        price: 100,
+        image: ["/circle-cha/1200x100.jpeg"],
+      },
+      {
+        id: "rb-10",
+        name: "რკინა-ბეტონის ჭის თავსახური",
+        size: "1700x100",
+        price: 150,
+        image: ["/circle-cha/1700x100.jpeg"],
+      },
+    ],
   },
+
   {
     category: "ოთკუთხა რკინა-ბეტონის ჭები",
     items: [
       {
         id: "rect-1",
-        name: "რ/ბ ოთკუთხა ჭა",
+        name: "რკინა-ბეტონის ოთკუთხა ჭა",
         size: "1500x1500x1000x200",
-        price: 700
+        price: 700,
+        image: ["/otxk.jpeg", "/otxkutxa/1500x1500x1000x200.jpeg"],
       },
       {
         id: "rect-2",
-        name: "რ/ბ ოთკუთხა ჭის თავსახური",
-        size: "1900x200",
-        price: 400
+        name: "რკინა-ბეტონის ოთკუთხა ჭა",
+        size: "1000x1000x1000x100",
+        price: 180,
+        image: ["/otxk.jpeg", "/otxkutxa/1000x1000x1000x100.jpeg"],
       },
       {
         id: "rect-3",
-        name: "რ/ბ ოთკუთხა ჭა",
-        size: "1000x1000x1000x100",
-        price: 180
-      }
-    ]
-  }
+        name: "რკინა-ბეტონის ოთკუთხა ჭის თავსახური",
+        size: "1900x200",
+        price: 400,
+        image: ["/otxkutxa/1900x200t.png", "/otxkutxa/1900x200.png"],
+      },
+    ],
+  },
+
+  {
+    category: "რკინა-ბეტონის ფილები",
+    items: [
+      {
+        id: "slab-1",
+        name: "რკინა-ბეტონის ფილა",
+        size: "1200x1200x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-2",
+        name: "რკინა-ბეტონის ფილა",
+        size: "1500x1500x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-3",
+        name: "რკინა-ბეტონის ფილა",
+        size: "1500x1000x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-4",
+        name: "რკინა-ბეტონის ფილა",
+        size: "1700x1700x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-5",
+        name: "რკინა-ბეტონის ფილა",
+        size: "2000x2000x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-6",
+        name: "რკინა-ბეტონის ფილა",
+        size: "2000x1000x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-7",
+        name: "რკინა-ბეტონის ფილა",
+        size: "2200x2200x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-8",
+        name: "რკინა-ბეტონის ფილა",
+        size: "3000x2000x200",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-9",
+        name: "რკინა-ბეტონის ფილა",
+        size: "4500x1200x300",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+      {
+        id: "slab-10",
+        name: "რკინა-ბეტონის ფილა",
+        size: "5000x1200x300",
+        price: "შეთანხმებით",
+        image: ["/default.jpeg", "/default.jpeg"],
+      },
+    ],
+  },
+
+  {
+    category: "სხვადასხვა",
+    items: [
+      {
+        id: "1",
+        name: "ლითონის ცხაურა",
+        size: "-",
+        length: "1 მ",
+        price: 130,
+        image: ["/default_arxi.jpeg", "/default_arxi.jpeg"],
+      },
+      {
+        id: "2",
+        name: "ბეტონის თავსახური",
+        size: "-",
+        length: "2 მ",
+        price: 120,
+        image: ["/default_arxi.jpeg", "/default_arxi.jpeg"],
+      },
+    ],
+  },
 ];
+

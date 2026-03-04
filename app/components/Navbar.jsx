@@ -23,7 +23,7 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="bg-gray-800 text-white text-xs sm:text-sm py-2 px-8">
         <div className="max-w-full flex justify-end">
-          <span>ტელ: 555 12 34 56</span>
+          <span>ტელ: 568 93 44 94</span>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ export default function Navbar() {
       <nav className="bg-white shadow ">
         <div className="max-full mx-auto flex justify-between items-center py-3 px-8">
           {/* Logo */}
-          <h1 className="text-xl sm:text-2xl font-bold text-black">Concrete</h1>
+          <Link href="/" className="logo text-xl sm:text-2xl font-bold text-black tracking-[2px]">ფუძემშენი</Link>
 
           {/* Desktop menu */}
           <div className="hidden md:flex gap-8 text-gray-700 font-medium items-center">
@@ -139,10 +139,11 @@ export default function Navbar() {
                 <FaMapMarkerAlt className="text-gray-500" /> მცხეთა, საქართველო
               </div>
               <div className="flex items-center gap-2">
-                <FaPhoneAlt className="text-gray-500" /> +995 557 17 17 06
+                <FaPhoneAlt className="text-gray-500" /> +995 568 93 44 94
               </div>
               <div className="flex items-center gap-3 text-sm sm:text-base">
-                  <FaEnvelope className="text-gray-500" />info@concrete.ge
+                <FaEnvelope className="text-gray-500" />
+                info@concrete.ge
               </div>
             </div>
 
@@ -169,11 +170,23 @@ export default function Navbar() {
                 <FaTiktok />
               </a>
             </div>
+
+            <div>
+              <iframe
+                className="w-full mt-2 xl:mt-8"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5943.925961744759!2d44.73175978534812!3d41.85062360989203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDUxJzAwLjgiTiA0NMKwNDMnNTMuMyJF!5e0!3m2!1sen!2sge!4v1772362853457!5m2!1sen!2sge"
+                height="250"
+                loading="lazy"
+                style={{ border: 0 }}
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
         </div>
 
         {/* Desktop contact slide-out */}
-        <div className="fixed inset-0 z-40 pointer-events-none">
+        <div className="fixed inset-0 z-40 pointer-events-none ">
           {/* Overlay */}
           <div
             className={`absolute inset-0 bg-black transition-opacity duration-300
@@ -183,22 +196,22 @@ export default function Navbar() {
 
           {/* Slide panel */}
           <div
-            className={`absolute top-0 right-0 h-full w-[25%] bg-white shadow-lg transform transition-transform duration-300
+            className={`absolute top-0 right-0 h-full w-[50%] xl:w-[40%] 2xl:w-[30%] bg-white shadow-lg transform transition-transform duration-300
               ${contactOpen ? "translate-x-0 pointer-events-auto" : "translate-x-full pointer-events-none"}`}
           >
             <div className="flex flex-col h-full justify-center p-6">
-              <h1 className="text-6xl font-bold">Concrete</h1>
-              <p className="mt-4">
+              <h1 className="logo text-6xl font-bold tracking-[2px]">ფუძემშენი</h1>
+              {/* <p className="mt-4">
                 <span>/</span> კონტაქტი
-              </p>
+              </p> */}
 
-              <div className="flex flex-col gap-4 mt-4">
+              <div className="flex flex-col gap-4 mt-8">
                 <div className="flex items-center gap-2">
                   <FaMapMarkerAlt className="text-gray-500" /> მცხეთა,
                   საქართველო
                 </div>
                 <div className="flex items-center gap-2">
-                  <FaPhoneAlt className="text-gray-500" /> +995 555 11 22 33
+                  <FaPhoneAlt className="text-gray-500" /> +995 568 93 44 94
                 </div>
                 <div className="flex items-center gap-3 text-sm sm:text-base">
                   <FaEnvelope className="text-gray-500" /> info@concrete.ge
@@ -227,6 +240,18 @@ export default function Navbar() {
                     <FaTiktok />
                   </a>
                 </div>
+              </div>
+
+              <div>
+                <iframe
+                  className="w-full mt-2 xl:mt-8"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5943.925961744759!2d44.73175978534812!3d41.85062360989203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDUxJzAwLjgiTiA0NMKwNDMnNTMuMyJF!5e0!3m2!1sen!2sge!4v1772362853457!5m2!1sen!2sge"
+                  height="250"
+                  loading="lazy"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>

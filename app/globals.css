@@ -2,6 +2,20 @@
 @import "tailwindcss";
 
 
+@font-face {
+  font-family: "parizuli";
+  src: url("/fonts/gl-parizuli-medium.ttf") format("truetype");
+}
+
+
 body {
   font-family: "Noto Serif Georgian", serif;
+}
+
+.logo {
+  font-family: "parizuli";
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
 }
